@@ -83,17 +83,18 @@ meter {
 }
 
 :root {
---primary-font-color: #D4C045;
---border-color: #D4C045;
---drink-bg-color: #452f10;
---food-bg-color: #4E5E4F;
---product-dark-text-color: #152F33;
+--primary-font-color: #F5B3FA;
+--border-color: #F5B3FA;
+--drink-bg-color: #796351;
+--food-bg-color: #72796D;
+--product-text-color: #f5e1f7;
+--product-dark-text-color: #170a19;
 --textbox-bg-color: #152F33;
 }
 
 body {
   font-family: 'Bebas Neue', cursive;
-  background-color: #0B191B;
+  background-color: #170a19;
   letter-spacing: 0.1rem;
   font-size: 18px;
   padding: 1rem;
@@ -131,7 +132,6 @@ body {
     gap: 0.5em;
 }
 
-
 #order-contents {
     flex-grow: 2;
 }
@@ -142,7 +142,7 @@ h2 {
 
 #product-selection-grid, #order-contents, #ingredients-panel {
   color: var(--primary-font-color);
-  border: 1px solid #D4C045;
+  border: 1px solid var(--border-color);
   padding: 1rem;
 }
 
@@ -170,7 +170,7 @@ h2 {
 }
 
 .order-totals {
-    border-top: 1px solid #D4C045;
+    border-top: 1px solid var(--border-color);
     display: grid;
     grid-template-columns: 1.5fr 1fr 0.25fr;
     padding-top: 0.75em;
@@ -188,7 +188,7 @@ h2 {
 }
 
 .btn-product {
-    color: #EEEEEE;
+    color: var(--product-text-color);
     border-radius: 5px;
     width: 110px;
     min-height: 3.5rem;
@@ -216,7 +216,7 @@ h2 {
 }
 
 .btn--forbidden {
-  background-color: #612823;
+  background-color: #2D2B3C;
 }
 
 .btn--spring-special {
